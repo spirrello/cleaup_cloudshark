@@ -13,6 +13,7 @@ from datetime import datetime, timedelta
 
 
 def pcap_cleanup():
+	    #Enter the an integer to use for the stale_date variable.  This variable indicates anything older than 7 days can be deleted from Cloudshark.
 		stale_date = datetime.now() - timedelta(days = 7)
 		#Need to convert the stale date into a string so we can use it for a date range in the API
 		search_date = stale_date.strftime("%m/%d/%Y")
