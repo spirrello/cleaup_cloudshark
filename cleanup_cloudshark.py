@@ -46,7 +46,7 @@ def pcap_cleanup():
 			#You'll need to modify the removal of the timezone to suite your needs.
 			upload_date = re.sub('\-05:00$', '', upload_date)
 			upload_date = re.sub('T', ' ', upload_date)
-			upload_date = datetime.strptime(upload_date, "%Y" + "-" "%m" + "-" "%d" + " " + "%H" + ":" + "%M" + ":" "%S") # + "-" + "%I" + ":" + "%S")
+			upload_date = datetime.strptime(upload_date, "%Y" + "-" "%m" + "-" "%d" + " " + "%H" + ":" + "%M" + ":" "%S")
 		
 			upload_date = upload_date.strftime("%m/%d/%Y")
 			print "upload_date = %s" % (upload_date)
