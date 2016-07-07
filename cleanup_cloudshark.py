@@ -11,7 +11,7 @@ from datetime import datetime, timedelta
 #You'll need to enter the IP or hostname of your cloudshark box.
 cloudshark_host = "cloudshark.example.org"
 #The API Token will also need to be specified
-cloudshark_api_token = "fca5b6765586eda128fa815f783142e0"
+cloudshark_api_token = [APITOKEN]
 #Delete captures older than this many days
 cloudshark_days_stale = 9999
 #Put the timezone that the CloudShark Appliance is in. This can be found on the Appliance Setup -> System Info page
